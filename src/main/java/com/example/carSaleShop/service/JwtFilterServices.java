@@ -1,6 +1,6 @@
 package com.example.carSaleShop.service;
 
-import com.example.carSaleShop.excception.CustomException;
+import com.example.carSaleShop.exception.CustomException;
 import com.example.carSaleShop.model.TokenInfo;
 import com.example.carSaleShop.utils.JwtUtils;
 import jakarta.servlet.FilterChain;

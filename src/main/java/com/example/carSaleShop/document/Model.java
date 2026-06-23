@@ -5,6 +5,7 @@ import com.example.carSaleShop.model.Transition;
 import com.example.carSaleShop.model.Type;
 import jakarta.validation.constraints.NotEmpty;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
@@ -13,6 +14,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 @Document("/car")
 public class Model {
     @Id

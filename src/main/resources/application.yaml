@@ -1,6 +1,28 @@
 server:
   port: 9090
+
 spring:
+  application:
+    name: car-management-system
+
   data :
     mongodb:
-      uri: mongodb://localhost:27017/car
+      uri: mongodb://localhost:27017/car-management-system
+      rabbitmq:
+        host: localhost
+        port: 5672
+        username: guest
+        password: guest
+
+jwt:
+  secret: your_secret_key
+  expiration: 86400000
+
+app:
+  rabbitmq:
+    exchange: car.management.exchange
+    queue:
+      sale: sale.queue
+      maintenance: maintenance.queue
+      notification: notification.queue
+      parts: parts.queue

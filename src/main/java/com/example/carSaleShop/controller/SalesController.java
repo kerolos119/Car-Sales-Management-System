@@ -3,7 +3,8 @@ package com.example.carSaleShop.controller;
 
 import com.example.carSaleShop.dto.PageResult;
 import com.example.carSaleShop.dto.SalesDto;
-import com.example.carSaleShop.model.Auitable;
+import com.example.carSaleShop.model.Auditable;
+import com.example.carSaleShop.model.SaleStatus;
 import com.example.carSaleShop.service.SalesServices;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,27 +16,40 @@ import org.springframework.web.bind.annotation.*;
 import java.time.LocalDateTime;
 
 @RestController
-@RequestMapping("/api/sale")
+@RequestMapping("/api/v1/sale")
 @RequiredArgsConstructor
-public class SalesController extends Auitable {
-    @Autowired
-    SalesServices services;
-    @PostMapping
-    public String create(@RequestBody SalesDto dto){
-        return  services.save(dto);
+public class SalesController extends Auditable {
+    private final SalesServices services;
+
+    public String create(SalesDto dto){
+        return services.create(dto);
     }
-    @DeleteMapping("/{id}")
-    public void delete(@PathVariable String id){
+
+    public SalesDto update(SalesDto dto, String id){
+        return services.update(dto, id);
+    }
+
+    public SalesDto complete(String id){
+        return services.complete(id);
+    }
+
+    public void delete(String id){
         services.delete(id);
     }
-    @GetMapping
+
+    public SalesDto getById(String id){
+        return services.getById(id);
+    }
+
     public PageResult search(
-            @RequestParam(required = false)LocalDateTime dateTime,
-            @RequestParam(required = false)String CarId,
-            @RequestHeader(required = false,defaultValue="0")Integer page,
-            @RequestHeader(required = false,defaultValue = "10") Integer size
-            ){
-        Pageable pageable= PageRequest.of(page,size, Sort.by(Sort.Direction.DESC,"name"));
-        return services.search(dateTime,CarId,pageable);
+            @RequestParam (required = false) LocalDateTime date,
+            @RequestParam (required = false) String carId,
+            @RequestParam (required = false) String customerId,
+            @RequestParam (required = false)SaleStatus status,
+            @RequestHeader (required = false, defaultValue = "0") int page,
+            @RequestHeader (required = false, defaultValue = "10") int size
+            ) {
+        Pageable pageable = PageRequest.of(page, size, Sort.by(Sort.Direction.DESC, "createdAt"));
+        return services.search(date, carId, customerId, status, pageable);
     }
 }

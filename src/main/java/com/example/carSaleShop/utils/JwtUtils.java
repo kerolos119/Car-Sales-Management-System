@@ -1,11 +1,10 @@
 package com.example.carSaleShop.utils;
 
-import com.example.carSaleShop.document.UserEntity;
+import com.example.carSaleShop.document.Users;
 import com.example.carSaleShop.model.TokenInfo;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.security.Keys;
-import org.springframework.security.core.userdetails.User;
 import org.springframework.stereotype.Component;
 
 import java.security.Key;
@@ -23,7 +22,7 @@ public class JwtUtils {
         return Keys.hmacShaKeyFor(keyBytes);
     }
 
-    public String generate(UserEntity admin){
+    public String generate(Users admin){
         HashMap<String ,Object> claims= new HashMap<>();
         claims.put("_id",admin.getId());
         claims.put("email",admin.getUsername());

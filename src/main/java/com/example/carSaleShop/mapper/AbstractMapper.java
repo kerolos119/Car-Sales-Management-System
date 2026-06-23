@@ -1,7 +1,5 @@
 package com.example.carSaleShop.mapper;
 
-import com.example.carSaleShop.document.Car;
-import com.example.carSaleShop.dto.CarDto;
 import jakarta.annotation.PostConstruct;
 import lombok.Setter;
 import org.modelmapper.Conditions;
@@ -9,38 +7,39 @@ import org.modelmapper.ModelMapper;
 import org.modelmapper.convention.MatchingStrategies;
 import org.springframework.beans.factory.annotation.Autowired;
 
-public abstract class AbstractMapper<D,E> implements Mapper<D,E> {
+public abstract class AbstractMapper<D, E> implements Mapper<D, E> {
 
     @Autowired
     @Setter
-    ModelMapper mapper;
-    private Class<D> dClass;
-    private Class<E> eClass;
-    public AbstractMapper(Class<D> dClass,Class<E> eClass){
-        this.dClass=dClass;
-        this.eClass=eClass;
+    protected ModelMapper modelMapper;
+
+    private final Class<D> dtoClass;
+    private final Class<E> entityClass;
+
+    protected AbstractMapper(Class<D> dtoClass, Class<E> entityClass) {
+        this.dtoClass = dtoClass;
+        this.entityClass = entityClass;
     }
+
     @PostConstruct
-    public  void  init(){
-        mapper.getConfiguration()
-                .setMatchingStrategy(MatchingStrategies.STANDARD)
+    public void init() {
+        modelMapper.getConfiguration()
+                .setMatchingStrategy(MatchingStrategies.STRICT)
                 .setAmbiguityIgnored(true)
                 .setPropertyCondition(Conditions.isNotNull());
-    }
-    @Override
-    public E toEntityy(D dto){
-        return mapper.map(dto ,eClass);
-
-    }
-    @Override
-    public D toDto(E entity) {
-        return mapper.map(entity,dClass);
     }
 
     @Override
     public E toEntity(D dto) {
-        return mapper.map(dto,eClass);
+        return modelMapper.map(dto, entityClass);
     }
 
-    public abstract Car updaToEntity(CarDto dto, Car entity);
+    @Override
+    public D toDto(E entity) {
+        return modelMapper.map(entity, dtoClass);
+    }
+
+    // Each mapper implements its own partial update logic
+    @Override
+    public abstract E updateToEntity(D dto, E entity);
 }

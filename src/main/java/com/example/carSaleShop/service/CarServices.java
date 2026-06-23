@@ -3,12 +3,12 @@ package com.example.carSaleShop.service;
 import com.example.carSaleShop.document.Car;
 import com.example.carSaleShop.dto.CarDto;
 import com.example.carSaleShop.dto.PageResult;
-import com.example.carSaleShop.excception.CustomException;
+import com.example.carSaleShop.exception.CustomException;
 import com.example.carSaleShop.mapper.CarMapper;
-import com.example.carSaleShop.model.Auitable;
+import com.example.carSaleShop.model.Auditable;
 import com.example.carSaleShop.model.Transition;
 import com.example.carSaleShop.model.Type;
-import com.example.carSaleShop.reposatory.CarReposatory;
+import com.example.carSaleShop.reposatory.CarRepository;
 import lombok.Builder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
@@ -19,15 +19,14 @@ import org.springframework.http.HttpStatus;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDateTime;
 import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
 @Builder
-public class CarServices extends Auitable {
+public class CarServices {
     @Autowired
-    CarReposatory reposatory;
+    CarRepository reposatory;
     @Autowired
     MongoTemplate template;
     @Autowired

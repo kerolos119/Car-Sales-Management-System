@@ -2,7 +2,7 @@ package com.example.carSaleShop.controller;
 
 import com.example.carSaleShop.dto.CarDto;
 import com.example.carSaleShop.dto.PageResult;
-import com.example.carSaleShop.model.Auitable;
+import com.example.carSaleShop.model.Auditable;
 import com.example.carSaleShop.model.Transition;
 import com.example.carSaleShop.model.Type;
 import com.example.carSaleShop.service.CarServices;
@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/v1/car")
 @RequiredArgsConstructor
-public class CarController extends Auitable {
+public class CarController extends Auditable {
     @Autowired
     CarServices services;
 

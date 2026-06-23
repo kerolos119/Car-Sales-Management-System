@@ -5,19 +5,111 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e1ddb7e-db67-410b-8b10-4913651d9123" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/document/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/document/Maintenance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/document/SpareParts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/dto/Credential.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/dto/CustomerDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/dto/MaintenanceDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/dto/SparePartsDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/mapper/CustomerMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/mapper/MaintenanceMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/mapper/SparePartMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/model/MaintenanceStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/model/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/model/SaleStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/reposatory/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/reposatory/MaintenanceRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/reposatory/ModelRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/reposatory/SparePartsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/reposatory/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/service/CustomerServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/controller/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/controller/CarController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/controller/SalesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/controller/SalesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/document/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/document/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/document/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/document/Model.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/document/Sales.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/document/Sales.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/document/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/document/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/dto/SalesDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/dto/SalesDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/dto/UserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/excception/CustomException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/exception/CustomException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/excception/ExceptionResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/exception/ExceptionResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/excception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/mapper/AbstractMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/mapper/AbstractMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/mapper/CarMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/mapper/CarMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/mapper/Mapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/mapper/Mapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/mapper/SalesMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/mapper/SalesMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/model/Auitable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/model/Auditable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/reposatory/CarReposatory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/reposatory/CarRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/reposatory/SalesReposatory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/reposatory/SalesRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/reposatory/UserReposatory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/service/CarServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/service/CarServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/service/CustomUsertDetailServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/service/CustomUsertDetailServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/service/JwtFilterServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/service/JwtFilterServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/service/SalesServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/service/SalesServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/service/UserServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/service/UserServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/utils/JwtUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/carSaleShop/utils/JwtUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/carSaleShop/CarSaleShopApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/carSaleShop/config/AppConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/carSaleShop/config/SecuirtyConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/carSaleShop/controller/CarController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/carSaleShop/controller/SalesController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/carSaleShop/document/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/carSaleShop/document/Car.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/carSaleShop/document/Model.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/carSaleShop/document/Model.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/carSaleShop/document/Sales.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/carSaleShop/document/Sales.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/carSaleShop/document/UserEntity$UserEntityBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/carSaleShop/document/UserEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/carSaleShop/dto/CarDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/carSaleShop/dto/CarDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/carSaleShop/dto/Credentail.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/carSaleShop/dto/Credentail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/carSaleShop/dto/PageResult$PageResultBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/carSaleShop/dto/PageResult$PageResultBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/carSaleShop/dto/PageResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/carSaleShop/dto/PageResult.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/carSaleShop/dto/SalesDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/carSaleShop/dto/SalesDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/carSaleShop/dto/UserDto$UserDtoBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/carSaleShop/dto/UserDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/carSaleShop/dto/UserDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/carSaleShop/excception/CustomException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/carSaleShop/excception/ExceptionResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/carSaleShop/excception/ExceptionResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/carSaleShop/excception/GlobalExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/carSaleShop/mapper/CarMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/carSaleShop/mapper/UserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/carSaleShop/model/Auitable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/carSaleShop/model/TokenInfo$TokenInfoBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/carSaleShop/model/TokenInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/carSaleShop/reposatory/UserReposatory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/carSaleShop/reposatory/UserReposatory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/carSaleShop/service/CarServices$CarServicesBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/carSaleShop/service/CarServices.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/carSaleShop/service/CustomUsertDetailServices.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/carSaleShop/service/JwtFilterServices.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/carSaleShop/service/SalesServices$SalesServicesBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/carSaleShop/service/SalesServices$SalesServicesBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/carSaleShop/service/SalesServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/carSaleShop/service/SalesServices.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/carSaleShop/service/UserServices$UserServicesBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/carSaleShop/service/UserServices$UserServicesBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/carSaleShop/service/UserServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/carSaleShop/service/UserServices.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/carSaleShop/utils/JwtUtils.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_D:/carsalef" value="2oFRKMftXakiAK9Nmr8T999d4C0" />
+    </persistenceIdMap>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -57,7 +149,7 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2oFRKMftXakiAK9Nmr8T999d4C0" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -67,13 +159,19 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.CarMangement.executor": "Run",
     "Application.CarSaleShopApplication.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "Spring Boot.CarSaleShopApplication.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/backend/carSaleShop",
+    "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
@@ -81,6 +179,23 @@
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="com.example.carSaleShop.service" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="CarMangement" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.example.carSaleShop.CarSaleShopApplication" />
+      <module name="carSaleShop" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.25134.95" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.25134.95" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -92,6 +207,9 @@
       <updated>1730463272715</updated>
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

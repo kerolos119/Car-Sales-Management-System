@@ -1,28 +1,22 @@
 package com.example.carSaleShop.mapper;
-import com.example.carSaleShop.document.Car;
-import com.example.carSaleShop.document.UserEntity;
-import com.example.carSaleShop.dto.CarDto;
+
+import com.example.carSaleShop.document.Users;
 import com.example.carSaleShop.dto.UserDto;
 import org.springframework.stereotype.Component;
 
 @Component
-public class UserMapper extends AbstractMapper<UserDto, UserEntity> {
+public class UserMapper extends AbstractMapper<UserDto, Users> {
+
     public UserMapper() {
-        super(UserDto.class,UserEntity.class);
+        super(UserDto.class, Users.class);
     }
 
     @Override
-    public UserEntity updateToEntity(UserDto dto, UserEntity entity) {
-        if (dto.getPassword() != null && !dto.getPassword().isEmpty())
-            entity.setPassword(dto.getPassword());
-        if (dto.getRoles() != null && !dto.getRoles().isEmpty())
-            entity.setRoles(dto.getRoles());
+    public Users updateToEntity(UserDto dto, Users entity) {
+        if (dto.getUsername() != null && !dto.getUsername().isBlank())
+            entity.setUsername(dto.getUsername());
+        if (dto.getPassword() != null && !dto.getPassword().isBlank())
+            entity.setPassword(dto.getPassword()); // encoding handled in service
         return entity;
-    }
-
-
-    @Override
-    public Car updaToEntity(CarDto dto, Car entity) {
-        return null;
     }
 }
